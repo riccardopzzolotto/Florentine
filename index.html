@@ -1,9 +1,104 @@
-<a-entity mindar-image-target="targetIndex: 0">
-  <a-gltf-model 
-    src="./Kuhorgane.glb"
-    scale="0.1 0.1 0.1"
-    position="0 0 0"
-    rotation="0 0 0"
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Kuh-AR</title>
+  <!-- AR.js / mindar-image Skripte einbinden -->
+  <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.3.1/dist/mindar-image.prod.js"></script>
+  <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.3.1/dist/aframe/mindar-image-aframe.prod.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+  <a-scene
+    mindar-image="imageTargetSrc: ./myMarker.mind; autoStart: true;"
+    vr-mode-ui="enabled: false"
+    device-orientation-permission-ui="enabled: true"
   >
-  </a-gltf-model>
-</a-entity>
+    <!-- Kamera in der Szene -->
+    <a-camera position="0 0 0" look-controls></a-camera>
+    
+    <!-- Mehrere 3D-Modelle, erscheinen sobald der Marker erkannt wird -->
+    <a-entity mindar-image-target="targetIndex: 0">
+      
+      <a-gltf-model 
+        src="./Gehirn.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Lunge.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Herz.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Zwerchfell.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Leber mit Gallenblase und Bauchspeicheldrüse.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Dünndarm.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Dickdarm.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Magen.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Milz.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Nieren.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+      
+      <a-gltf-model 
+        src="./Gebärmutter mit Blase.glb"
+        scale="1 1 1"
+        position="0 0 0"
+        rotation="0 0 0"
+      ></a-gltf-model>
+
+    </a-entity>
+  </a-scene>
+</body>
+</html>
+
